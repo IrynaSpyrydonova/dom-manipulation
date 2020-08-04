@@ -47,6 +47,12 @@
       <script id='DOM manipulation script'>
         debugger;
         'use strict';
+        const actual = document.querySelector('#actual');
+        const heading = document.createElement('h1');
+        heading.innerHTML = 'a list of things';
+        actual.insertBefore(heading, actual.children[0]);
+        actual.children[1].children[1].innerHTML ='solar systems';
+        
 
         // write me! (... without using cloneNode, that's kind of cheating)
       </script>

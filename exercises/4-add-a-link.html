@@ -41,6 +41,12 @@
         debugger;
         'use strict';
 
+        const link = document.createElement('a');
+        link.href = "https://www.youtube.com/watch?v=0ik6X4DJKCc";
+        link.expected = '_blank';
+        link.innerHTML = 'Mr. Traversy does it again!';
+
+        document.getElementById('actual').appendChild(link);
        // write me! (... without using cloneNode, that's kind of cheating)
       </script>
 
